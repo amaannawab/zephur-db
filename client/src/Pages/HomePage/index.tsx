@@ -31,43 +31,61 @@ export default function HomePage(): ReactElement {
             height: "45px",
             width: "80%",
             marginTop: "-23px",
-            paddingLeft: "1.5%",
+            paddingLeft: "3%",
+            flexDirection: "column",
           }}
         >
-          <input
-            placeholder="Search by any hospital, diagnosis, disease.."
-            style={{
-              background: "#FFFFFF 0% 0% no-repeat padding-box",
-              boxShadow: "0px 5px 10px #00000029",
-              borderRadius: "10px",
-              color: "black",
-              fontSize: "18px",
-              width: "66%",
-            }}
-          />
-          <div
-            style={{
-              color: "white",
-              background: "#000000 0% 0% no-repeat padding-box",
-              borderRadius: "0px 10px 10px 0px",
-              marginLeft: "-14px",
-              display: "flex",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-            }}
-          >
-            <i
-              style={{ alignSelf: "center", marginLeft: "7px" }}
-              className="fa fa-search"
-              aria-hidden="true"
-            ></i>
+          <div style={{ display: "flex", height: "48px" }}>
+            <input
+              placeholder="Search by any hospital, diagnosis, disease.."
+              style={{
+                background: "#FFFFFF 0% 0% no-repeat padding-box",
+                boxShadow: "0px 5px 10px #00000029",
+                borderRadius: "10px",
+                color: "black",
+                fontSize: "18px",
+                width: "66%",
+              }}
+            />
             <div
               style={{
-                alignSelf: "center",
+                color: "white",
+                background: "#000000 0% 0% no-repeat padding-box",
+                borderRadius: "0px 10px 10px 0px",
+                marginLeft: "-14px",
+                display: "flex",
+                paddingLeft: "10px",
+                paddingRight: "10px",
               }}
             >
-              Search
+              <i
+                style={{ alignSelf: "center", marginLeft: "7px" }}
+                className="fa fa-search"
+                aria-hidden="true"
+              ></i>
+              <div
+                style={{
+                  alignSelf: "center",
+                }}
+              >
+                Search
+              </div>
             </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              width: "83%",
+              marginTop: "10px",
+            }}
+          >
+            <div style={{ color: "lightslategrey" }}>POPULAR SEARCHES</div>
+            <div>COVID</div>
+            <div>Lung Cancer</div>
+            <div>Prostate Cancer</div>
+            <div>Cesarean Surgery</div>
           </div>
         </div>
       </div>
